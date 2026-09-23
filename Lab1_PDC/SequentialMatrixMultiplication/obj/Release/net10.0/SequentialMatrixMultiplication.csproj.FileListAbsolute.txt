@@ -1,0 +1,14 @@
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\bin\Release\net10.0\SequentialMatrixMultiplication.exe
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\bin\Release\net10.0\SequentialMatrixMultiplication.deps.json
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\bin\Release\net10.0\SequentialMatrixMultiplication.runtimeconfig.json
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\bin\Release\net10.0\SequentialMatrixMultiplication.dll
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\bin\Release\net10.0\SequentialMatrixMultiplication.pdb
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.AssemblyInfo.cs
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.dll
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\refint\SequentialMatrixMultiplication.dll
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.pdb
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\SequentialMatrixMultiplication.genruntimeconfig.cache
+C:\Users\DELL\Desktop\BSCS-ev-7-C\PDC\Lab\Lab1_PDC\SequentialMatrixMultiplication\obj\Release\net10.0\ref\SequentialMatrixMultiplication.dll
