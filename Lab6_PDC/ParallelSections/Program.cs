@@ -56,7 +56,7 @@ Console.WriteLine($"results_match={(match ? "YES" : "NO")}");
 
 static class Work
 {
-    // A: count primes below 5,000,000 by trial division (shortest)
+    // A: count primes below 5,000,000 by trial division
     public static long A()
     {
         long count = 0;
@@ -65,7 +65,7 @@ static class Work
         return count;
     }
 
-    // B: sum of the digits of every number below 90,000,000 (longest)
+    // B: sum of the digits of every number below 90,000,000
     public static long B()
     {
         long sum = 0;
@@ -77,7 +77,7 @@ static class Work
         return sum;
     }
 
-    // C: total Collatz steps for every start value below 2,500,000 (medium)
+    // C: total Collatz steps for every start value below 2,500,000
     public static long C()
     {
         long steps = 0;
