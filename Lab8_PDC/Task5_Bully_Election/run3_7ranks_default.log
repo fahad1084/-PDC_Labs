@@ -1,0 +1,56 @@
+  rank 2 -> rank 0 : ANSWER(2)
+rank 2: starts an election
+  rank 2 -> rank 3 : ELECTION(2)
+  rank 2 -> rank 4 : ELECTION(2)
+  rank 2 -> rank 5 : ELECTION(2)
+  rank 2 -> rank 6 : ELECTION(2)
+  rank 2 -> rank 1 : ANSWER(2)
+  rank 5 -> rank 0 : ANSWER(5)
+rank 5: starts an election
+  rank 5 -> rank 6 : ELECTION(5)
+  rank 5 -> rank 2 : ANSWER(5)
+Bully: ranks 7 | crashed rank 6 | initiator 0
+rank 0: starts an election
+  rank 0 -> rank 1 : ELECTION(0)
+  rank 0 -> rank 2 : ELECTION(0)
+  rank 0 -> rank 3 : ELECTION(0)
+  rank 0 -> rank 4 : ELECTION(0)
+  rank 0 -> rank 5 : ELECTION(0)
+  rank 0 -> rank 6 : ELECTION(0)
+  rank 1 -> rank 0 : ANSWER(1)
+rank 1: starts an election
+  rank 1 -> rank 2 : ELECTION(1)
+  rank 1 -> rank 3 : ELECTION(1)
+  rank 4 -> rank 2 : ANSWER(4)
+rank 4: starts an election
+  rank 4 -> rank 5 : ELECTION(4)
+  rank 4 -> rank 6 : ELECTION(4)
+  rank 4 -> rank 0 : ANSWER(4)
+  rank 4 -> rank 3 : ANSWER(4)
+rank 6: CRASHED (silent, no answers)
+  rank 3 -> rank 1 : ANSWER(3)
+rank 3: starts an election
+  rank 3 -> rank 4 : ELECTION(3)
+  rank 3 -> rank 5 : ELECTION(3)
+  rank 3 -> rank 6 : ELECTION(3)
+  rank 3 -> rank 2 : ANSWER(3)
+  rank 3 -> rank 0 : ANSWER(3)
+  rank 5 -> rank 4 : ANSWER(5)
+  rank 5 -> rank 3 : ANSWER(5)
+  rank 1 -> rank 4 : ELECTION(1)
+  rank 1 -> rank 5 : ELECTION(1)
+  rank 1 -> rank 6 : ELECTION(1)
+  rank 4 -> rank 1 : ANSWER(4)
+  rank 5 -> rank 1 : ANSWER(5)
+rank 4: new leader is rank 5
+rank 2: new leader is rank 5
+rank 1: new leader is rank 5
+rank 5: no higher rank answered, I am the leader
+  rank 5 -> rank 0 : COORDINATOR(5)
+  rank 5 -> rank 1 : COORDINATOR(5)
+  rank 5 -> rank 2 : COORDINATOR(5)
+  rank 5 -> rank 3 : COORDINATOR(5)
+  rank 5 -> rank 4 : COORDINATOR(5)
+rank 0: new leader is rank 5
+rank 3: new leader is rank 5
+RESULT: ranks 7 | crashed 6 | initiator 0 | new leader 5 | all_agree=Y | messages 41

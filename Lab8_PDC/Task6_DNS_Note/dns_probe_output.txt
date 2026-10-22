@@ -1,0 +1,64 @@
+### dig +trace www.example.com (captured in the lab sandbox)
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> +trace www.example.com
+;; global options: +cmd
+;; Received 28 bytes from 8.8.8.8#53(8.8.8.8) in 0 ms
+
+
+### dig @198.41.0.4 (a.root-servers.net), non-recursive
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @198.41.0.4 www.example.com A +norec +time=3 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 55790
+;; flags: qr ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 8192
+;; QUESTION SECTION:
+;www.example.com.		IN	A
+
+;; Query time: 0 msec
+;; SERVER: 198.41.0.4#53(198.41.0.4) (UDP)
+;; WHEN: Thu Oct 22 16:36:14 UTC 2026
+;; MSG SIZE  rcvd: 44
+
+
+### dig @8.8.8.8 (recursive), twice in a row
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @8.8.8.8 www.example.com A +time=3 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 48107
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 8192
+;; QUESTION SECTION:
+;www.example.com.		IN	A
+
+;; Query time: 0 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Thu Oct 22 16:36:14 UTC 2026
+;; MSG SIZE  rcvd: 44
+
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @8.8.8.8 www.example.com A +time=3 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 22299
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 8192
+;; QUESTION SECTION:
+;www.example.com.		IN	A
+
+;; Query time: 0 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Thu Oct 22 16:36:14 UTC 2026
+;; MSG SIZE  rcvd: 44
+

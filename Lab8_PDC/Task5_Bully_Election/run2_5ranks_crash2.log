@@ -1,0 +1,32 @@
+Bully: ranks 5 | crashed rank 2 | initiator 0
+rank 0: starts an election
+  rank 4 -> rank 0 : ANSWER(4)
+rank 4: starts an election
+rank 4: no higher rank answered, I am the leader
+  rank 4 -> rank 0 : COORDINATOR(4)
+  rank 4 -> rank 1 : COORDINATOR(4)
+  rank 4 -> rank 2 : COORDINATOR(4)
+  rank 4 -> rank 3 : COORDINATOR(4)
+  rank 0 -> rank 1 : ELECTION(0)
+  rank 0 -> rank 2 : ELECTION(0)
+  rank 0 -> rank 3 : ELECTION(0)
+  rank 0 -> rank 4 : ELECTION(0)
+rank 0: new leader is rank 4
+  rank 1 -> rank 0 : ANSWER(1)
+rank 1: starts an election
+  rank 4 -> rank 1 : COORDINATOR(4)
+  rank 1 -> rank 2 : ELECTION(1)
+  rank 1 -> rank 3 : ELECTION(1)
+  rank 1 -> rank 4 : ELECTION(1)
+rank 1: new leader is rank 4
+rank 1: new leader is rank 4
+  rank 4 -> rank 3 : COORDINATOR(4)
+  rank 3 -> rank 1 : ANSWER(3)
+rank 3: starts an election
+  rank 3 -> rank 4 : ELECTION(3)
+rank 2: CRASHED (silent, no answers)
+rank 0: new leader is rank 4
+rank 3: new leader is rank 4
+  rank 3 -> rank 0 : COORDINATOR(4)
+rank 3: new leader is rank 4
+RESULT: ranks 5 | crashed 2 | initiator 0 | new leader 4 | all_agree=Y | messages 18
